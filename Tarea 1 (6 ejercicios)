@@ -1,0 +1,47 @@
+#1- Numero Par e Impar
+Num=float(input("Ingrese el número para determinar si es PAR o IMPAR: "))
+if Num%2==0:
+    print("El número ingresado es PAR.")
+else:
+    print("El número ingresado es IMPAR.")
+    
+    
+#2- Volumen de una esfera
+Radio=float(input("Ingrese el valor del radio de la esfera: "))
+print("El volumen de la esfera es de: ", (4/3)*3.14159265359*(Radio**3))
+
+
+#3- Hipotenusa de un triángulo rectángulo
+from math import sqrt as raizc
+C1=float(input("Ingrese le valor del cateto número 1: "))
+C2=float(input("Ingrese le valor del cateto número 2: "))
+print("El valor de la hipotenusa del triángulo es de: ", raizc((C1**2)+(C2**2)))
+
+
+#4- Suma y resta de dos números
+N1=float(input("Ingrese el valor del primer número: "))
+N2=float(input("Ingrese el valor del segundo número: "))
+print("El resultado de la suma entre",N1,"y",N2," es de:",N1+N2,".Por otro lado, el resultado de la resta es de: ", N1-N2)
+
+
+#5- Tipos de triángulos
+L1=float(input("Ingrese el valor del lado 1: "))
+L2=float(input("Ingrese el valor del lado 2: "))
+L3=float(input("Ingrese el valor del lado 3: "))
+if (L1==L2) and (L2==L3):
+    print("Según los datos ingresados, el triángulo es Equilátero.")
+elif (L1==L2) or (L2==L3) or (L3==L1):
+    print("Según los datos ingresados, el triángulo es Isósceles.")
+else:
+    print("Según los datos ingresados, el triángulo es Escaleno.")
+
+#6- Promedio de notas de un estudiante
+CSuma=0
+CNota=0
+R="Si"
+while R=="Si":
+    Nota=float(input("Ingrese la nota del estudiante: "))
+    CSuma+=Nota
+    CNota+=1
+    R=input("Desea ingresar otra nota? (Si/No): ")
+print("El promedio es de: ", CSuma/CNota)
