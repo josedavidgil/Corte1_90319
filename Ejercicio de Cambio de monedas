@@ -1,0 +1,21 @@
+n=int(input("Ingrese el valor de la moneda: "))
+nmonedas1000=int(n/1000)
+res1=n%1000
+print('Se necesitan ',nmonedas1000,' monedas de 1000')
+nmonedas500=int(res1/500)
+res2=res1%500
+print('Se necesitan ',nmonedas500,' monedas de 500')
+nmonedas200=int(res2/200)
+res3=res2%200
+print('Se necesitan ',nmonedas200,' monedas de 200')
+nmonedas100=int(res3/100)
+res4=res3%100
+print('Se necesitan ',nmonedas100,' monedas de 100')
+nmonedas50=int(res4/50)
+res5=res4%50
+nmonedas25=int(res5/25)
+res6=res5%25
+if res6>1:
+    print('se necesitan ',nmonedas50+1,' monedas de 50')
+else:
+    print('se necesitan ',nmonedas50,' monedas de 50')
